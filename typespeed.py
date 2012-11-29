@@ -24,6 +24,7 @@ import re
 import time
 
 enter_key = gtk.gdk.keyval_from_name("KP_Enter")
+options = None
 
 def get_options():
     parser = OptionParser()
@@ -57,7 +58,6 @@ def op_syscall(process):
 
             if cleanup:
                 splitted = cleanup.split(" ")
-                print splitted
                 for word in words:
                     for captured in splitted:
                         if captured.startswith(word):
@@ -73,7 +73,7 @@ def op_syscall(process):
     process.syscall()
 
 def main():
-    global options2
+    global options
     options = get_options()
 
     dbg = PtraceDebugger()
