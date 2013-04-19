@@ -1,7 +1,7 @@
 #!/usr/bin/env python2.7
 
 
-# Jorge Niedbalski <niedbalski@pyrosome.org>
+# Jorge Niedbalski <jnr@pyrosome.org>
 #
 #  [ Typespeed bot ]
 #
